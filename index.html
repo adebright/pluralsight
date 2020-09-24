@@ -56,14 +56,13 @@
     <header class="w-100 fixed-top">
         <section class="section-wrapper bg-footer  header shadow">
             <div class="wrappers">
-                <div class="wrap d-md-hide relative">
+                <div class="wrap d-md-hide relative justify-content-between">
                     <div class="m-r-1">
                         <a href="#" class="brand uppercase">
                             <i class="fa fa-play logo-icon circle-content bg-red text-white"></i> 
                             Pluralsight
                         </a>
                     </div>
-                   
                         <a class="search" href="#">
                             <i class="fa fa-search"></i>
                         </a>
@@ -74,6 +73,15 @@
                             <span></span>
                         </button>
                     </div>
+                    <section class="mobile-navigations d-md-hide d-nothing">
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">Home</a>
+                    </section>
                 </div>
                 <div class="wrap justify-content-between">
                     <div class="d-sm-hide">
@@ -84,8 +92,31 @@
                                 <i class="fa fa-play logo-icon circle-content bg-red text-white"></i> 
                                 Pluralsight
                             </a>
-                            <a href="#">Products <i class="fa fa-chevron-down"></i></a>
-                            <a href="#">Courses <i class="fa fa-chevron-down"></i></a>
+                            <div class="has-dropdown" style="display: inline;"> 
+                                <a href="#">Products  <i class="fa fa-chevron-down"></i></a>
+                                <div class="is-drop-content">
+                                    <a href="#">Pluralsight Skills</a>
+                                    <a href="#">Pluralsight Flow</a>
+                                    <a href="#">Government</a>
+                                    <a href="#">Gift of Pluralsight</a>
+                                    <a href="#">View Pricing</a>
+                                    <a href="#">Contact Sales</a>
+                                    <a href="#">Skill up for free</a>
+                                </div>
+                            </div>
+                            
+                            <div class="has-dropdown" style="display: inline;"> 
+                                <a href="#">Courses  <i class="fa fa-chevron-down"></i></a>
+                                <div class="is-drop-content">
+                                    <a href="#">Pluralsight Skills</a>
+                                    <a href="#">Pluralsight Flow</a>
+                                    <a href="#">Government</a>
+                                    <a href="#">Gift of Pluralsight</a>
+                                    <a href="#">View Pricing</a>
+                                    <a href="#">Contact Sales</a>
+                                    <a href="#">Skill up for free</a>
+                                </div>
+                            </div>
                             <a href="#">View Plans </a>
                             <a href="#">Resources <i class="fa fa-chevron-down"></i></a>
                         </nav>
@@ -678,9 +709,13 @@
     <script src="js/bigjara.js"></script>
     <script>
         let mobileToggler = document.querySelector("#mobile-toggler")
+        let mobileNavigations = document.querySelector(".mobile-navigations")
         mobileToggler.addEventListener("click" , event => {
             let {target} = event 
-            target.classList.toggle("change-toggle")
+            if (target.id === "mobile-toggler"){
+                mobileNavigations.classList.toggle("d-nothing")
+                target.classList.toggle("change-toggle")
+            }
         })
     </script>
 </body>
