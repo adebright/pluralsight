@@ -690,7 +690,8 @@
   background : #339;
 }
 .white-text {
-  color : #fff;
+  /* color : #fff; */
+  color : #d0d7d1;
 }
 .red-text {
   color : #f00

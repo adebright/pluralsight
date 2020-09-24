@@ -1,5 +1,6 @@
 body {
-    background: rgb(12, 9, 9);
+    /* background: rgb(12, 9, 9); */
+    background : #323d4d
 }
 a {
     text-decoration : none;
@@ -181,13 +182,15 @@ a {
 
 } */
 .bg-red {
-    background : rgb(209, 3, 82);
+    /* background : rgb(209, 3, 82); */
+    background : #04e474
 }
 .red-text {
-    color : rgb(209, 3, 82 )
+    color : #04e474
 }
 .white-text {
-    color : #fff;
+    /* color : #fff; */
+    color : #d0d7d1;
 } 
 .access {
     border: 1px solid #fff;
@@ -288,7 +291,8 @@ a {
     position : relative
 }
 .ribbon {
-    background : #fa0;
+    /* background : #fa0; */
+    background : #23bda6 ;
     color : #000;
     position: absolute;
     top :0 ;
@@ -309,7 +313,8 @@ a {
     border-bottom : 1px solid #ccc;
 }
 .footer-navs h5  , .footer-navs p{
-    color : #fff;
+    /* color : #fff; */
+    color : #d0d7d1;
     font-size: 1.1rem;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -416,7 +421,8 @@ tbody tr:nth-child(even){
   padding-bottom: .65rem;
 }
 .bg-footer {
-    background : #222;
+    /* background : #222; */
+    background : #243444
 }
 /* .footer {
     padding : 1.5rem 0;
