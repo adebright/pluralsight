@@ -183,10 +183,10 @@ a {
 } */
 .bg-red {
     /* background : rgb(209, 3, 82); */
-    background : #04e474
+    background : #344c82
 }
 .red-text {
-    color : #04e474
+    color : #d0d7d1;
 }
 .white-text {
     /* color : #fff; */
@@ -279,7 +279,7 @@ a {
 }
 .save-cost {
     padding : .25rem;
-    background : #fa0 ; 
+    background : #5078b2 ; 
     color : #000;
     border-radius: 3px;
     font-size: 1.5rem;
@@ -292,7 +292,7 @@ a {
 }
 .ribbon {
     /* background : #fa0; */
-    background : #23bda6 ;
+    background : #736567 ;
     color : #000;
     position: absolute;
     top :0 ;
