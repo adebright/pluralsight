@@ -154,7 +154,45 @@ a {
     opacity : .75;
     font-size : 1rem;
     font-family : "Segoe UI" , Helvetica , "Helvetica neue" , sans-serif;
-}
+} 
+/* .is-visible {
+    animation : bounce 2s cubic-bezier(0.6, 0.04, 0.98, 0.335) 1ms ;
+} */
+@keyframes fadein {
+    from{
+      opacity : 0 ;
+      /* transform: scale(0); */
+    }
+    50%{
+      opacity: 0.5;
+      /* transform: scale(0.5); */
+    }
+    75% {
+      opacity: 0.75;
+      /* transform: scale(0.75); */
+    }
+    to {
+      opacity : 1 ;
+      /* transform: scale(1); */
+    }
+  }
+  @keyframes rotation {
+    0%{
+        transform : rotate(90deg)
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+.is-visible {
+    animation : fadein 1s ease-in 1ms
+    /* animation-name : fadein , rotation ; 
+    animation-duration: 6s , 6s;
+    animation-timing-function: ease-in-out , ease;
+    animation-delay: 1ms , 1ms;
+    animation-iteration-count: 1 , 1; */
+    /* animation-direction: alternate-reverse , reverse; */
+  }
 .account {
     background : rgb(41, 172, 143);
     color : #fff;
