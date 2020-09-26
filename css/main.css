@@ -185,7 +185,7 @@ a {
     }
   }
 .is-visible {
-    animation : fadein 1s ease-in 1ms
+    animation : fadein 3s ease-in 1ms
     /* animation-name : fadein , rotation ; 
     animation-duration: 6s , 6s;
     animation-timing-function: ease-in-out , ease;
